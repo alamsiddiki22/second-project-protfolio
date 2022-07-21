@@ -1,0 +1,236 @@
+body{
+    font-family: 'Playfair Display', serif;
+    margin: 0 auto;
+    width: 1349px;
+}
+.banner{
+    background-color: black;
+    border-radius: 30px;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 40px;
+    height: 500px;
+    width: 90%;
+}
+.banner-left{
+    padding: 50px 70px;
+    width: 50%;
+}
+h1{
+    color: aliceblue;
+    font-size: 60px;
+    font-weight: 700;
+    /* width: 100%; */
+    margin: 0;
+}
+p{
+    color: aliceblue;
+    padding-bottom: 20px;
+    font-weight: 700;
+    /* width: 90%; */
+    margin-bottom: 30px;
+}
+.banner-pic{
+    /* width: 50%; */
+    height: 100%;
+    
+}
+.banner-pic img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+/* banner end */
+
+/* main body start */
+.main-body{
+    display: flex;
+    margin: 0 auto;
+    padding: 0px;
+    margin-top: 110px;
+    width: 90%;
+}
+.left{
+    background-color: black;
+    border-radius: 15px;
+    margin: 8px;
+    padding: 10px;
+    width: 20%;
+    height: 265px;
+}
+.left li{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.left li a{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+    padding: 18px;
+    background-color: beige;
+    list-style: none;
+    color: black;
+    text-decoration: none;
+    border: 15px solid black;
+    border-radius: 20px;
+    
+}
+#blog{
+    background-color: red;
+    color: aliceblue;
+}
+
+.right{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.first{
+    margin: 0 auto;
+    margin: 8px;
+    padding: 0px;
+    border: 1px solid silver;
+    border-radius: 9px;
+    height: 340px;
+}
+.part-one img{
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-bottom: 6px;
+}
+#button{
+    margin-top: 6px;
+    margin-left: 12px;
+    padding: 5px 15px;
+    border: 1px solid silver;
+    border-radius: 3px;
+}
+.part-one h4{
+    margin-left: 12px;
+    margin-top: 12px;
+}
+.icon{
+    margin-left: 12px;
+}
+.fa-regular{
+    width: 70px;
+}
+
+
+.baton{
+    margin: 15px;
+    margin-top: 20px;
+    color: whitesmoke;
+    text-decoration: none;
+    background-color: #FF5959;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+
+    .footer{
+      background-color: black;
+      width: 100%;
+      height: 300px;
+      padding-top: 20px;
+      margin-top: 70px;
+  }
+  .footer h3{
+    color: white;
+    text-align: center;
+    width: 55%;
+    font-size: 28px;
+    font-weight:700;
+    margin: 0 auto;
+    margin-top: 90px;
+    line-height: 5px;
+    margin-bottom: 50px;
+}
+.underline{
+    width: 70%;
+    margin: 0 auto;
+    border: 1px solid #42403d;
+}
+
+  ul {
+      justify-content: center;
+      list-style-type: none;
+      margin: 0 auto;
+      margin-top: 35px;
+      padding: 0;
+      display: flex;
+  }
+  
+  li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  /* next part */
+  .first-part{
+      display: flex;
+      margin: 15px;
+  }
+  .first-part h5{
+      margin: 20px;
+  }
+  .one{
+      border: 1px solid silver;
+      margin: 0 auto;
+      margin: 8px;
+      padding: 40px 20px;
+      border-radius: 8px;
+      height: 150px;
+      width: 275px;
+  }
+  .one img{
+      width: 100%;
+  }
+  .second-part h3{
+      text-align: center;
+      margin: 0 auto;
+      font-size: 24px;
+      font-weight: 700;
+      margin-top: 22px;
+  }
+  .second-part h6{
+    text-align: center;
+    font-size: 15px;
+    margin: 10px;
+    color: #666;
+  }
+
+  /* Responsive-part start */
+  @media screen and (max-width: 576px) {
+    .banner {
+        display: block;
+        grid-template-columns: repeat(1, 1fr);
+        /* flex-direction: column; */
+    }
+    .main-body{
+        display: block;
+        grid-template-columns: repeat(1, 1fr);
+        /* flex-direction: column; */
+    }
+    /* .banner .banner-left {
+        width: 50%;
+    }*/
+    /* .banner .banner-pic {
+        display: block;
+        width: 50%;
+    }  */
+    .right{
+        display: block;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media screen and (min-width: 577px) and (max-width:700px) {
+    .right{
+        display: block;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+  /* Responsive-part end */
